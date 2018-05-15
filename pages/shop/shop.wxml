@@ -1,0 +1,16 @@
+<import src="/tmp/shop/shop.wxml" /> 
+<view class="main">
+    <view class='myinfo'>
+      <view><text>我的积分：<text class='col-red'>{{integral}}</text></text></view>
+    </view>
+
+    <view class='shop-body flex-row'>
+      <view wx:if = "{{goodsCount == 0}}" class='null-mes-view'>暂无商品数据~</view>
+
+       <block wx:for="{{goodsList}}" wx:for-item="val" wx:for-index="idx">
+         <view catchtap="getGoodsDetail" data-gid="{{val.id}}" data-imgsrc="{{val.src}}">
+            <template is="shopListTmp" data="{{...val}}"/>
+         </view>
+      </block>
+    </view><!--shop body-->
+</view><!--main-->

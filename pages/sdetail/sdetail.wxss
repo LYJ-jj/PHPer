@@ -1,0 +1,21 @@
+.big-img-view{
+  width:100%;
+  min-height: 400rpx;
+}
+
+.img-view{
+  width: auto;
+  height: 100%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.btn-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.info-item{
+  margin-bottom: 20rpx;
+}

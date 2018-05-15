@@ -1,0 +1,22 @@
+<import src="/pages/wxParse/wxParse.wxml" />
+<view class="detail-main">
+
+  <view class="detail-head">
+     <view class="detail-title padding-5-20">
+       <text>{{detail.title}}</text>
+     </view>
+
+     <view class="detail-info padding-5-20">
+       <text>发布于：{{detail.created_time}}</text><text> 点击量:{{detail.clickNum}}</text>
+     </view>
+  </view>
+
+
+  <view class="detail-cont">
+    <view class="padding-5-20">
+         <template is="wxParse" data="{{wxParseData:content.nodes}}"></template>
+    </view>
+
+  </view>
+  
+</view>

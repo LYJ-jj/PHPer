@@ -1,0 +1,7 @@
+.article-his{
+   height:20px;
+   line-height: 20px;
+   width:700rpx;
+   margin-bottom: 10px;
+   padding-right: 20rpx;
+}

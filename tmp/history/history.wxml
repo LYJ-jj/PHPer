@@ -1,0 +1,6 @@
+<template name="historyListTmp">
+  <view class="article-his">
+      <view class="float-l">{{article.title}}</view>
+      <view class="float-r">></view>
+  </view>
+</template>

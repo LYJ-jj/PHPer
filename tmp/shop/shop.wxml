@@ -1,0 +1,13 @@
+<template name="shopListTmp">
+  <view class='shop-item float-l'>
+    <view class='img-view float-l'><image class='thumb' src='{{src}}'></image></view>
+    <view class='goods-view float-r'>
+      <view class='goods-info-row'>
+        <text class='goods-tit'>{{g_name}}</text>
+      </view>
+      <view class='goods-info-row'>商品类型：{{g_type}}</view>
+      <view class='goods-info-row'>所需积分：{{g_integral}}分</view>
+      <view class='goods-info-row'>剩余数量：{{surplus_num}}件</view>
+    </view><!--goods view-->
+  </view><!--shop item-->
+</template>

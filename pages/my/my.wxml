@@ -1,0 +1,41 @@
+<import src="/tmp/history/history.wxml" />
+<view class="main">
+
+ <view class="my-head">
+   <image src="/imgs/icon/bg.jpg" class="myhead-img"></image>
+   <view class="my-info">
+      <image src="{{face}}" class="face"></image>
+      <view class="my-name">
+          <text>{{name}}</text>
+      </view>
+    </view>
+ </view>
+
+ <view class="my-cont">
+ 
+    <view class="box padding-5-20">
+     <view class="tag">我的信息</view>
+     <view class="box-cont">
+        <text>我的积分: {{integral}}</text>
+     </view>
+     <view class="box-cont">
+        <text>最后一次登录时间: {{last_login_time}}</text>
+     </view>
+   </view>
+
+   <view class="box padding-5-20">
+      <view class="tag">浏览记录</view>
+      <block wx:if="{{historyList}}" wx:for="{{historyList}}" wx:for-item="val" wx:for-index="idx">
+         <view catchtap="getArticleDetail" data-aid="{{val.article_id}}">
+            <template is="historyListTmp" data="{{...val}}"/>
+         </view>
+      </block>
+   </view>
+
+   <view class="box padding-5-20">
+      <view class="tag">兑换车</view>
+   </view>
+
+ </view><!--my-cont-->
+    
+</view><!--main-->

@@ -1,0 +1,27 @@
+.goods-tit{
+  font-weight: 600;
+  font-size: 32rpx;
+}
+
+.shop-item{
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.thumb{
+  width: 230rpx;
+  height: 230rpx;
+}
+
+.goods-view{
+  width: 510rpx;
+  height:224rpx;
+  padding-left: 10rpx;
+  padding-top: 6rpx;
+}
+
+.goods-info-row{
+  width: 70%;
+  height: 54rpx;
+  line-height: 54rpx;
+}

@@ -1,0 +1,39 @@
+<view class='main'>
+  <!--<view class='big-img-view'>
+    <view class='img-view'><image src='{{src}}'></image></view>
+  </view>--><!--暂时不要图片-->
+
+  <view class='info-item'>
+    <view class='tag'>商品信息</view>
+    <view>
+      <view>商品名称：<text class='col-red'>{{detail.g_name}}</text></view>
+      <view>商品类型：<text class='col-red'>{{detail.g_type}}</text></view>
+      <view>所需积分：<text class='col-red'>{{detail.g_integral}}分</text></view>
+      <view>剩余数量：<text class='col-red'>{{detail.surplus_num}}件</text></view>
+    </view>
+  </view>
+  
+  <form bindsubmit='suborder'>
+    <view class='info-item'>
+      <view class='tag'>填写邮箱<text class='col-red'>*</text></view>
+      <input type='text' name="email" placeholder = '请输入您的邮箱' bindblur='inputBlur' value='{{emailVal}}'></input>
+    </view>
+
+    <view class='info-item'>
+      <view class = 'tag'><text>兑换说明</text></view>
+      <view>
+        <text>本商品由PHPer之家提供。          </text>
+
+        <view><text>1.每种物品只可以兑换一次。</text></view>
+        <view><text>2.兑换请正确填写您的邮箱，确保邮箱地址真实有效。</text></view>
+        <view><text>3.本程序所有商品均属非盈利性，物品兑换成功不接受退换。</text></view>
+        <view><text>4.虚拟物品免费，实体物品需要支付10-15元的快递费用。</text></view>
+      </view>
+    </view>
+
+    <view class='btn-bottom'>
+      <button size='default' type='primary' form-type='submit' disabled='{{btnDisables}}'>兑换</button>
+    </view>
+  </form>
+  
+</view>

@@ -1,0 +1,50 @@
+@import "/tmp/history/history.wxss";
+.my-head{
+   height:350rpx;
+   width:750rpx;
+}
+
+.myhead-img{
+   width:750rpx;
+   height:350rpx;
+}
+
+.my-info{
+    width:250rpx;
+    height:150rpx;
+    position: absolute;
+    left:250rpx;
+    top: 70rpx;
+    flex-direction: column;
+    margin:0 auto;
+    text-align: center;
+    color:#ccc;
+}
+
+.my-cont{
+   width:750rpx;
+}
+
+
+.my-name{
+  width:100%;
+  text-align: center;
+}
+
+.face{
+   width:100rpx;
+   height:100rpx;
+   border-radius: 999px;
+}
+
+.box{
+   margin-bottom: 10px;
+}
+
+.box-cont{
+   font-size: 26rpx;
+   padding-bottom: 5px;
+}
+
+
+

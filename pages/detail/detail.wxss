@@ -1,0 +1,31 @@
+@import "/pages/wxParse/wxParse.wxss";
+.detail-main{
+   width: 750rpx;
+   height:100%;
+}
+
+
+.detail-title{
+  color:black;
+  font-weight: 500;
+  font-size: 36rpx;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.detail-info{
+   font-size: 26rpx;
+   border-bottom: 1px #FCFCFC solid;
+   padding-bottom: 5px;
+}
+
+.detail-cont{
+  width:750rpx;
+  height:100%;
+  line-height: 20px;
+  font-size: 26rpx;
+}
+
+.detail-footer{
+    
+}

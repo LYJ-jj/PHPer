@@ -1,0 +1,15 @@
+@import "/tmp/list/list.wxss";
+.swiper{
+  width:750rpx;
+  height: 400rpx;
+}
+
+.swiper-img{
+  width:750rpx;
+  height:400rpx;
+}
+
+.icon-arrow{
+  width:20rpx;
+  height:20rpx;
+}

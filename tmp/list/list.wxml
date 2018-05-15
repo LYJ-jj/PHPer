@@ -1,0 +1,13 @@
+<template name="articleListTmp">
+  <view class="item">
+        <view>
+          <text>{{title}}</text>
+        </view>
+
+        <view class="item-info">
+            <view class="cate-view">
+              <text class="cate-txt">{{cate.name}}</text>
+            </view>
+        </view>
+  </view>
+</template>

@@ -1,0 +1,19 @@
+<import src="/tmp/list/list.wxml" /> 
+
+<view class="main">
+  <swiper indicator-dots="true" autoplay="true" class="swiper">
+    <swiper-item><image src="/imgs/swiper/php4.jpg" class="swiper-img"></image></swiper-item>
+    <swiper-item><image src="/imgs/swiper/php1.jpg" class="swiper-img"></image></swiper-item>
+    <swiper-item><image src="/imgs/swiper/php2.jpg" class="swiper-img"></image></swiper-item>
+    <swiper-item><image src="/imgs/swiper/php3.jpg" class="swiper-img"></image></swiper-item>
+  </swiper>
+
+    <view class="body">
+      <block wx:for="{{articleList}}" wx:for-item="val" wx:for-index="idx">
+         <view catchtap="getArticleDetail" data-aid="{{val.id}}">
+            <template is="articleListTmp" data="{{...val}}"/>
+         </view>
+      </block>
+    </view>
+</view>
+

@@ -1,0 +1,25 @@
+.item{
+  width:730rpx;
+  height:70rpx;
+  padding:10px 10rpx 15px 10rpx;
+  border-bottom: .5px solid #ccc;
+  display: flex;
+  letter-spacing: 2rpx;
+  flex-direction: column;
+}
+
+.item-info{
+   flex-direction: row;
+   font-size: 22rpx;
+   margin-top: 8px;
+}
+
+
+.cate-txt{
+    border:.5px solid #D81817;
+    border-radius: 10rpx;
+    padding:4rpx;
+    color: #D81817;
+}
+
+
